@@ -1,0 +1,15 @@
+body {
+    background-color: bisque;
+  }
+  
+  div {
+    padding: 50px;
+    border: solid 3px black;
+  }
+  
+  img {
+    display: block;
+    max-width: 30%;
+    height: auto;
+    align-self: center;
+  }

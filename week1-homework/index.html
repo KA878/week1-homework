@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="https://unpkg.com/mocha@4.0.1/mocha.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+<h1>Hero App</h1>
+<div>
+  <center><img id='inn' onclick='rest(hero)' src='https://upload.wikimedia.org/wikipedia/commons/8/81/African_Lion_Resting_at_the_Entebbe_Zoo_in_Uganda.jpg' alt= 'lion nap'></center>
+</div>
+<br>
+<div>
+  <center><img id='dagger' onclick='addWeapon()' src='https://svgsilh.com/svg/1530003.svg' alt='dagger'></center>
+</div>
+<br>
+<div>
+  <center><img id='bag' onclick='equipHero()'src='https://cdn.pixabay.com/photo/2014/04/02/10/50/superhero-304713_1280.png' alt='hero image'></center>
+</div>  
+<!-- YOUR HTML HERE -->
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+  <div id="mocha"></div>
+
+  <script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+  <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sinon@3/pkg/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="game_logic.test.js"></script>
+
+</body>
+</html>
